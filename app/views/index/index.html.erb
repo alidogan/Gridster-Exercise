@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Angular Gridster</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+
+ 
+
+<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/sdecima/javascript-detect-element-resize/master/detect-element-resize.js"></script>
+-->
+   
+
+
+</head>
+
+<body ng-app="app">
+	
+    <div >
+        <div class="container" ng-view>
+			<div class="demo-container" ng-controller="MainCtrl">
+				<h2>&nbsp;</h2>
+				<div gridster>
+					<ul>
+						<li gridster-item><%=@content%></li>
+					</ul>
+                  
+                  <ul>
+						<li gridster-item></li>
+					</ul>
+                    
+                  <ul>
+						<li gridster-item></li>
+					</ul>
+                    
+				</div>
+			</div>
+		</div>
+
+    </div>
+</body>
+
+
+
+</html>
